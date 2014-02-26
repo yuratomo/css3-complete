@@ -13,12 +13,12 @@ Settings
 --------
 Set your .vimrc as follows.
 ### autoload java-api-complete
-    au BufNewFile,BufRead *.html    setl omnifunc=css3#complete
+    au BufNewFile,BufRead *.css    setl omnifunc=css3#complete
     
 ### show status refarence
-    au CompleteDone *.html          call css3#showRef()
-    au BufNewFile,BufRead *.html    inoremap <expr> <c-down> css3#nextRef()
-    au BufNewFile,BufRead *.html    inoremap <expr> <c-up>   css3#prevRef()
+    au CompleteDone *.css          call css3#showRef()
+    au BufNewFile,BufRead *.css    inoremap <expr> <c-down> css3#nextRef()
+    au BufNewFile,BufRead *.css    inoremap <expr> <c-up>   css3#prevRef()
 
 ScreenShots
 ----------
